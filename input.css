@@ -2,6 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-.firstHalf {
-    @apply bg-[url('images/bg-pattern-desktop.svg')] bg-left bg-cover;
+/* .image {
+    width: 50%;
+    position: relative;
+    background: url('./images/illustration-woman-online-desktop.svg')
+    bottom 68px left -74px no-repeat, url('./images/bg-pattern-desktop.svg') 
+    bottom -159px left -570px no-repeat;
+}
+
+.image::before {
+    content: "";
+    position: absolute;
+    bottom: 134px;
+    left: -90px;
+    background: url('./images/illustration-box-desktop.svg') no-repeat;
+    width: 191px;
+    height: 156px;
+} */
+.main {
+    border-radius: 30px;
+}
+.bg-mobileBackground {
+    background-position-x: center;
+}
+.bg-desktopBackground {
+    background-position-x: -37rem;
+    background-position-y: -20rem;
+}
+.box {
+    position: absolute;
+    top: 18rem;
+    left: 8rem;
+}
+.mText:hover {
+    color: hsl(14, 88%, 65%);
 }

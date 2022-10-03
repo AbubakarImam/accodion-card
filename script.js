@@ -1,9 +1,18 @@
-let mainText = document.querySelector(".mText");
-let addText = document.querySelector(".aText");
-let downBtn = document.querySelector(".btn");
-console.log(downBtn)
-function show() {
-    for(let i = 0; i < addText.length; i++) {
-            addText[i].classList.toggle(".hidden")
-    }
-}
+const accordion = document.querySelectorAll(".accordion")
+accordion.forEach(function(){
+  const btn = document.querySelectorAll(".btn");
+  const question = document.querySelectorAll(".mText");
+  const para = document.querySelectorAll(".aText");
+
+  btn.forEach(function (button) {
+    
+    button.addEventListener('click', () => {
+      para.forEach(function(item){
+        item.classList.toggle("hidden");
+      })
+      question.forEach(function(item){
+        item.classList.add("font-bold")
+      })
+    })
+  })
+})

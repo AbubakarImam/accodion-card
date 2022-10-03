@@ -16,10 +16,14 @@ module.exports = {
         'Kumbh Sans': ['Kumbh', 'sans']
       },
       backgroundImage: {
-        'desktopBackground': "url('/images/bg-pattern-desktop.svg')",
-        'mobileBackground': "url('/images/bg-pattern-mobile.svg')" 
-      }
-    },
+        'mobileBackground': "url('/images/bg-pattern-mobile.svg')",
+        'desktopBackground': "url('/images/bg-pattern-desktop.svg')" 
+      },
+      // backgroundPosition: {
+      //   'bottom': 'bottom -10rem',
+      //   'left' : 'left'
+      // },
+    }
   },
   plugins: [],
 }
